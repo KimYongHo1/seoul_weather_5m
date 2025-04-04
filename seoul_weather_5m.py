@@ -14,7 +14,7 @@ data = response.json()
 temp = data["main"]["temp"]
 time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-csv_filenam = "seoul_weather.csv"
+csv_filename = "seoul_weather.csv"
 header = ["time", "temp"]
 
 file_exist = os.path.isfile(csv_filename)
